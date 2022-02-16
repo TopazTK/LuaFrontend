@@ -72,7 +72,7 @@ If prompted by the tooltip, double click the script to show a more detailed erro
 
 ## Third Party Libraries
 
-https://qt.io/ (Qt 5.15.2)  
+https://qt.io/ (Qt 6.2.2)  
 http://www.lua.org/ (Lua 5.4.3)  
 https://github.com/ThePhD/sol2  
 https://github.com/d-bahr/CRCpp  
