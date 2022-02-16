@@ -1,0 +1,47 @@
+[GameEntry00]
+Title = "Kingdom Hearts [GL]"
+Path = "/scripts/kh1gl/"
+Address = "0"
+Offset = "3A0606"
+BigEndian = false
+Executable = "KINGDOM HEARTS FINAL MIX.exe"
+
+[GameEntry01]
+Title = "Kingdom Hearts II [GL]"
+Path = "/scripts/kh2gl/"
+Address = "0"
+Offset = "56450E"
+BigEndian = false
+Executable = "KINGDOM HEARTS II FINAL MIX.exe"
+
+[GameEntry02]
+Title = "Kingdom Hearts II [JP]"
+Path = "/scripts/kh2jp/"
+Address = "0"
+Offset = "56350E"
+BigEndian = false
+Executable = "KINGDOM HEARTS II FINAL MIX.exe"
+
+[GameEntry03]
+Title = "RPCS3"
+Path = "/scripts/rpcs3/"
+Address = "300010000"
+Offset = "0"
+BigEndian = true
+Executable = "RPCS3.exe"
+
+[GameEntry04]
+Title = "Kingdom Hearts Birth by Sleep [GL]"
+Path = "/scripts/khbbs/"
+Address = "0"
+Offset = "60E334"
+BigEndian = false
+Executable = "KINGDOM HEARTS Birth by Sleep FINAL MIX.exe"
+
+[GameEntry05]
+Title = "Kingdom Hearts Re:Chain of Memories [GL]"
+Path = "/scripts/khcom/"
+Address = "0"
+Offset = "4E4660"
+BigEndian = false
+Executable = "KINGDOM HEARTS Re_Chain of Memories.exe"

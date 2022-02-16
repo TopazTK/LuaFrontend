@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AboutFrontend</class>
+ <widget class="QDialog" name="AboutFrontend">
+  <property name="windowModality">
+   <enum>Qt::WindowModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>633</width>
+    <height>188</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>About LuaFrontend</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>:/resources/iconMain.ico</normaloff>:/resources/iconMain.ico</iconset>
+  </property>
+  <widget class="QLabel" name="Image">
+   <property name="geometry">
+    <rect>
+     <x>14</x>
+     <y>8</y>
+     <width>171</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="Resources.qrc">:/resources/iconMain.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="TitleLabel">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>3</y>
+     <width>291</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>LuaFrontend v1.15</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="QtLabel">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>60</y>
+     <width>411</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>LuaFrontend powered by Qt 6.2.2 (MSVC 2019, x64)</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="CompLabel">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>33</y>
+     <width>311</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Compatible with LuaEngine v5.10.</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="TKCopyLabel">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>105</y>
+     <width>411</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Copyright 2020-2022 / TopazTK - Certain rights reserved.</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="QtCopyLabel">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>125</y>
+     <width>411</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Copyright 2008-2022 / Qt Company Ltd. All rights reserved.</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="NoticeLabel">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>153</y>
+     <width>421</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>3rd Party libraries included. See the Github Repository for info.</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="LuaLabel">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>78</y>
+     <width>411</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>LuaEngine powered by Lua 5.4.3 (MSVC 2019, x64)</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="Resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AboutPatreon</class>
+ <widget class="QDialog" name="AboutPatreon">
+  <property name="windowModality">
+   <enum>Qt::WindowModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>633</width>
+    <height>188</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Consider...</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>:/resources/iconMain.ico</normaloff>:/resources/iconMain.ico</iconset>
+  </property>
+  <widget class="QLabel" name="Image">
+   <property name="geometry">
+    <rect>
+     <x>14</x>
+     <y>8</y>
+     <width>171</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="Resources.qrc">:/resources/iconPatreon.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="TitleLabel">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>3</y>
+     <width>291</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Consider Supporting TopazTK!</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="MessageLabel">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>45</y>
+     <width>411</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;TopazTK is a lone developer, trying his best to make programs like LuaFrontend, and mods like Re:Fixed possible. Unfortunately, however, he is not financially stable enough to pour a lot of time to these projects. By supporting TopazTK on Patreon, you can make it possible for him to work on these things for longer, allowing him to do his passion job! There are also some benefits to this so please, do consider.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="LinkLabel">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>153</y>
+     <width>421</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Any support is appreciated: &lt;a href=&quot;https://patreon.com/topaztk&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#007af4;&quot;&gt;https://patreon.com/topaztk&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="Resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

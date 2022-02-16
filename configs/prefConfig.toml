@@ -1,0 +1,6 @@
+[Preferences]
+autoBool = false
+threadBool = false
+consoleBool = false
+darkPalBool = false
+language = "en_US"
