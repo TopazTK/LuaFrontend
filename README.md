@@ -1,5 +1,7 @@
 # LuaFrontend
 
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/f203de1330334726a97188ec7aa16654)](https://www.codacy.com/gh/TopazTK/LuaFrontend/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=TopazTK/LuaFrontend&amp;utm_campaign=Badge_Grade)
+
 LuaFrontend is a standalone script interpreter for PC games. It attaches itself to the PC application and executes Lua scripts. 
 It is fully compatible with LuaEngine.
 
