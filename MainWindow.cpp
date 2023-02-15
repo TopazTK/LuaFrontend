@@ -292,7 +292,7 @@ int MainWindow::parseScript()
     // This backend runs nothing. It's just there
     // to check the scripts.
 
-    backendFake = new LuaBackend(_path.toStdString().c_str(), 0x00000000, _console);
+    backendFake = new LuaBackend(_path.toStdString().c_str(), 0x00000000, 0x00000000, _console);
 
     // Fun. Do the below for every script:
 
@@ -652,7 +652,7 @@ void MainWindow::connectEvent()
     // Feed the information to a read backend.
     // This backend actually runs everything needed.
 
-    backend = new LuaBackend(_path.toStdString().c_str(), _baseAddress, _console);
+    backend = new LuaBackend(_path.toStdString().c_str(), _baseAddress, _exeAddress, _console);
 
     // Since there is a two-way sorting, this is easy.
     // Check the state of the script widget. Make a new
