@@ -2,7 +2,7 @@
 
 LuaBackend::LuaBackend() { }
 
-LuaBackend::LuaBackend(const char* ScrPath, uint64_t BaseInput, Console* TargetConsole)
+LuaBackend::LuaBackend(const char* ScrPath, uint64_t BaseInput, uint64_t ExecInput, Console* TargetConsole)
 {
     frameLimit = 1000 / 60;
 	loadedScripts = vector<LuaScript*>();
@@ -10,10 +10,10 @@ LuaBackend::LuaBackend(const char* ScrPath, uint64_t BaseInput, Console* TargetC
 
     _outputConsole = TargetConsole;
 
-	LoadScripts(ScrPath, BaseInput);
+	LoadScripts(ScrPath, BaseInput, ExecInput);
 }
 
-void LuaBackend::LoadScripts(const char* ScrPath, uint64_t BaseInput)
+void LuaBackend::LoadScripts(const char* ScrPath, uint64_t BaseInput, uint64_t ExecInput)
 {
 	loadedScripts.clear();
     auto _iterator = QDirIterator(ScrPath, QDirIterator::Subdirectories);
@@ -65,10 +65,11 @@ void LuaBackend::LoadScripts(const char* ScrPath, uint64_t BaseInput)
             string _pathFull = MemoryLib::PName;
             auto _pathExe = _pathFull.substr(_pathFull.find_last_of("\\") + 1);
 
-            _script->luaState["ENGINE_VERSION"] = 5;
+            _script->luaState["ENGINE_VERSION"] = 5.2;
             _script->luaState["ENGINE_TYPE"] = "BACKEND";
             _script->luaState["GAME_ID"] = CRC::Calculate(_pathExe.c_str(), _pathExe.length(), CRC::CRC_32());
             _script->luaState["BASE_ADDR"] = BaseInput;
+            _script->luaState["EXEC_ADDR"] = ExecInput;
 
             _script->parseResult = _script->luaState.script_file(_path.toStdString(), &sol::script_pass_on_error);
 
