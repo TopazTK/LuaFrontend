@@ -47,10 +47,10 @@ class LuaBackend
 		}
 
 		void SetFunctions(LuaState*);
-		void LoadScripts(const char*, uint64_t);
+		void LoadScripts(const char*, uint64_t, uint64_t);
 
         LuaBackend();
-        LuaBackend(const char*, uint64_t, Console*);
+        LuaBackend(const char*, uint64_t, uint64_t, Console*);
 
     private:
         Console* _outputConsole;
